@@ -20,8 +20,10 @@
     "url": "https://github.com/Frixoe/fot.git"
   },
   "deprecated": false,
+  "dependencies": {
+    "shelljs": "^0.7.8"
+  },
   "devDependencies": {
-    "optimist": "^0.6.1",
     "shelljs": "^0.7.8"
   }
 }
