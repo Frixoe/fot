@@ -1,6 +1,7 @@
 ***FO - T***
 ======
-A simple tool that lets you start a project *without the hassle of creating the same folders over and over again.* **Create once... and never again.**
+
+Also known as "folder-template," **fot** is a simple tool that lets you start a project *without the hassle of creating the same folders over and over again.* **Create once... and never again.**
 
 ---
 
