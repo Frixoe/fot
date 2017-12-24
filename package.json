@@ -1,0 +1,27 @@
+{
+  "name": "fot",
+  "version": "0.1.0",
+  "description": "A simple tool that lets you start a project without the hassle of creating the same folders over and over again. Create once... and never again.",
+  "main": "index.js",
+  "bin": "./cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "folders",
+    "template",
+    "folder-template"
+  ],
+  "author": "Suryansh S. <business.suryansh@gmail.com>",
+  "license": "MIT",
+  "repository" : { 
+    "type" : "git",
+    "url" : ""
+  },
+  "deprecated": false,
+  "devDependencies": {
+    "optimist": "^0.6.1",
+    "shelljs": "^0.7.8"
+  }
+}
