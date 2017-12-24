@@ -1,6 +1,6 @@
 {
   "name": "fot",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "description": "A simple tool that lets you start a project without the hassle of creating the same folders over and over again. Create once... and never again.",
   "main": "index.js",
   "bin": "./cli.js",
