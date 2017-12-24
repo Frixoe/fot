@@ -15,9 +15,9 @@
   ],
   "author": "Suryansh S. <business.suryansh@gmail.com>",
   "license": "MIT",
-  "repository" : { 
-    "type" : "git",
-    "url" : ""
+  "repository": {
+    "type": "git",
+    "url": ""
   },
   "deprecated": false,
   "devDependencies": {
