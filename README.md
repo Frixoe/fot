@@ -1,17 +1,16 @@
+[![npm version](https://badge.fury.io/js/fot.svg)](https://badge.fury.io/js/fot)
+
 ***FO - T***
 ======
 
 Also known as "folder-template," **fot** is a simple tool that lets you start a project *without the hassle of creating the same folders over and over again.* **Create once... and never again.**
 
----
 
 **Installation**
 ------------
 
 Open your command line/terminal and type the following:
 >**npm install fot -g**
-
----
 
 
 **Setup**
@@ -29,7 +28,6 @@ To let **fot** know where to look for, when cloning templates.
 
 >Note: You can change your templates directory by doing the steps above with another path.
 
----
 
 **Usage**
 -----
@@ -38,13 +36,11 @@ To let **fot** know where to look for, when cloning templates.
 1. Navigate into your project folders ***parent directory***.
 2. Type `fot clone {{template name/folder name(inside your templates folder)}}`
 
----
 
 **EXAMPLE**
 ------------------
 ***Billy will be available soon...***
 
----
 
 **LICENSE**
 -------
