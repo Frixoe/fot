@@ -17,7 +17,7 @@ Open your command line/terminal and type the following:
 -----
 
 To let **fot** know where to look for, when cloning templates.
-####To setup your installation of **fot** do the following:
+###To setup your installation of **fot** do the following:
 
 1. Create a folder containing all of the templates you would like to use and navigate into that folder using your cmd/terminal.
 2. Type the following in your cmd/terminal:  `fot here`
@@ -28,13 +28,19 @@ To let **fot** know where to look for, when cloning templates.
 
 >Note: You can change your templates directory by doing the steps above with another path.
 
+**Clear Path**
+--------------
+
+Accidentally set the wrong path? Just type the following to clear the templates path:
+
+>**fot clear**
 
 **Usage**
 -----
 
-####To clone a template simply:
+###To clone a template simply:
 1. Navigate into your project folders ***parent directory***.
-2. Type `fot clone {{template name/folder name(inside your templates folder)}}`
+2. Type `fot clone {{template name/folder name(inside your templates folder)}} {{OPTIONAL new foldername}}`
 
 
 **EXAMPLE**
