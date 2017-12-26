@@ -45,7 +45,20 @@ Accidentally set the wrong path? Just type the following to clear the templates 
 
 **EXAMPLE**
 ------------------
-***Billy will be available soon...***
+Billy is a developer. And with every project, Billy needs to create a lot of folders, files and most of the time needs to write the same boiler plate code **over and over again** UGH... Billy doesn't like this.
+
+Trying to combat this problem, Billy stumbles upon ***FO - T***: the easiest tool to use for folder-templates.
+
+Now Billy can just move all of his boiler plate folders and files(with the code) to one directory and clone the templates from there whenever he wants to start a new project! Billy loves this!
+
+Billy does the following:
+1. He creates a 'templates' folder in his documents because he finds that convenient.
+2. In his command prompt, he goes inside the templates folder and does the following.
+3. He then creates a template which he knows he will be using a lot in the future.
+4.  Now he can clone any folder/file from inside the 'templates' folder to anywhere he likes, with **ease.**
+5. He goes inside his 'projects' folder which is in his documents folder and types just ***ONE*** command to clone all of his files into the projects folder. Oh and he also renames it.
+
+##Be smart like Billy, use ***FO - T*** , and save your **precious** time.
 
 
 **LICENSE**
