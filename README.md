@@ -124,7 +124,8 @@ INSIDE:
 
 
 
-#Be smart like Billy, use ***FO - T*** , and save your **precious** time.
+***Be smart like Billy, use ***FO - T*** , and save your **precious** time.***
+------
 
 
 **LICENSE**
