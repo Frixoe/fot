@@ -68,32 +68,60 @@ Now Billy can just move all of his boiler plate folders and files(with the code)
 **Billy does the following:**
 1. He creates a 'templates' folder in his documents because he finds that convenient.
 
+
 ![you][pic2]
 
+
 ![better][pic1]
+
+
 2. In his command prompt, he goes inside the templates folder and does the following to set his templates directory.
+
 
 ![appreciate][pic4]
 
+
 ![this][pic5]
+
+
 3. He then creates a template which he knows he will be using a lot in the future.
+
 
 ![elaborate][pic3]
 
+
 INSIDE:
+
+
 ![documentation][pic9]
+
+
 4.  Now he can clone any folder/file from inside the 'templates' folder to anywhere he wants, with **ease.**
+
+
 5. He goes inside his 'projects' folder which is in his documents folder and types just ***ONE*** command to clone all of his files into the projects folder. Oh and he also renames it.
 
+
 BEFORE:
+
+
 ![cuz][pic6]
+
 
 ![this][pic7]
 
+
 AFTER:
+
+
 ![took a lot][pic8]
+
+
 INSIDE:
+
+
 ![of time...][pic10]
+
 
 #Be smart like Billy, use ***FO - T*** , and save your **precious** time.
 
