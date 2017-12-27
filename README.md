@@ -30,11 +30,14 @@ To let **FO - T** know where to look for, when cloning templates.
 
 >**Note**: You can change your templates directory by doing the steps above with another path or you can clear the path(more about that in the next section.)
 
-**Clear Path**
---------------
-Accidentally set the wrong path? Just type the following to clear the templates path:
-
->**fot clear**
+**Commands**
+------------
+- **```fot here```**: Set the templates directory to the working directory.
+- **```fot get```**: Get the template directory's absolute path.
+- **```fot set {abs-path}```**: Set the templates directory to the absolute path {abs-path}
+- **```fot clone {template} {OPTIONAL new filename}```**: Clone a template into the working directory.
+- **```fot clear```**: Forgets your templates dir.
+- **```fot list```**: Lists all the templates in your templates dir.
 
 **Usage**
 -----

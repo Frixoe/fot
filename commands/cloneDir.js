@@ -1,6 +1,8 @@
 var fs = require('fs');
 var shell = require('shelljs');
 
+var getTempPath = require('./helpers/getTempPath');
+
 /*
 What am I doing here?
 
@@ -11,13 +13,10 @@ What am I doing here?
 
 module.exports = function(tempName, curDir, newTempName=null) {
     // Get the template director path from tempPath.txt.
-    var tempPath = fs.readFileSync(__dirname + '\\..\\tempPath.txt', {encoding: 'utf8'});
-    if (!tempPath) throw 'ERROR: A templates path has not been set yet.';
+    var tempPath = getTempPath();
 
     // Check if template exists in the folder.
-    var templates = fs.readdirSync(tempPath);
-
-    if (templates.indexOf(tempName) === -1) throw 'ERROR: No template by that name. Please check your templates folder.';
+    if (fs.readdirSync(tempPath).indexOf(tempName) === -1) throw 'ERROR: No template by that name. Please check your templates folder.';
 
     // If template exists, copy its contents into the current directory.
     var temp = tempPath + "\\" + tempName;
@@ -28,8 +27,7 @@ module.exports = function(tempName, curDir, newTempName=null) {
 
     if (newTempName && typeof newTempName === 'string' || newTempName instanceof String)
     {
-        var renamed = shell.mv(tempName, newTempName);
-        if (shell.error()) throw 'ERROR: Something went wrong while renaming the template. Here\'s what came back: ' + renamed.stderr;
+        fs.renameSync(curDir + "\\" + tempName, curDir + "\\" + newTempName);
     }
 
     return 'SUCCESS: Cloned the template files into the current directory.';
