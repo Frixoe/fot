@@ -5,14 +5,14 @@
   "main": "index.js",
   "bin": "./dist/cli.js",
   "files": [
-    "src/",
-    "gulpfile.js",
+    "dist/",
     "package.json",
     "package-lock.json",
+    "tempPath.txt",
     "README.md"
   ],
   "scripts": {
-    "postinstall": "gulp setup",
+    "prepublish": "gulp setup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
