@@ -9,18 +9,18 @@ var getPath = require('./commands/getPath');
 var clearPath = require('./commands/clearPath');
 var listTemps = require('./commands/listTemps');
 
-var helpString = `USAGE: "fot {command} {argument}"
-"Create folder templates with ease."
+// var helpString = ```USAGE: "fot {command} {argument}"
+// "Create folder templates with ease."
 
-Commands:
-- 'fot here': Set the templates directory to the working directory.
-- 'fot get': Get the template directory's absolute path.
-- 'fot set {abs-path}': Set the templates directory to the absolute path {abs-path}
-- 'fot clone {template} {OPTIONAL new filename}': Clone a template into the working directory.
-- 'fot clear': Forget your templates dir.
-- 'fot list': Lists all the templates in your templates dir.
+// Commands:
+// - 'fot here': Set the templates directory to the working directory.
+// - 'fot get': Get the template directory's absolute path.
+// - 'fot set {abs-path}': Set the templates directory to the absolute path {abs-path}
+// - 'fot clone {template} {OPTIONAL new filename}': Clone a template into the working directory.
+// - 'fot clear': Forget your templates dir.
+// - 'fot list': Lists all the templates in your templates dir.
 
-With great node packages come ridiculous bugs so please do report them :D`;
+// With great node packages come ridiculous bugs so please do report them :D```;
 
 var command = args[0];
 var input = args[1];
@@ -48,7 +48,7 @@ try
             } else throw 'ERROR: Incorrect option usage! Correct: "fot get"';
             break;
         case 'clone':
-            if (input && isString(input)) console.log(!extra ? cloneDir(input, process.cwd()) : cloneDir(input, process.cwd(), extra));
+            if (input && isString(input)) console.log(!extra ? cloneDir(input, process.cwd(), null) : cloneDir(input, process.cwd(), extra));
             else throw 'ERROR: Incorrect option usage! Correct: "fot clone {template name(string)} {folder name upon creation(string)}"';
             break;
         case 'clear':

@@ -3,9 +3,16 @@
   "version": "1.3.0",
   "description": "A simple tool that lets you start a project without the hassle of creating the same folders over and over again. Create once... and never again.",
   "main": "index.js",
-  "bin": "./cli.js",
+  "bin": "./dist/cli.js",
+  "files": [
+    "src/",
+    "gulpfile.js",
+    "package.json",
+    "package-lock.json",
+    "README.md"
+  ],
   "scripts": {
-    "postinstall": "node firstInstall.js",
+    "postinstall": "gulp setup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -22,9 +29,9 @@
   },
   "deprecated": false,
   "dependencies": {
-    "shelljs": "^0.7.8"
-  },
-  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0",
     "shelljs": "^0.7.8"
   }
 }

@@ -11,7 +11,7 @@ What am I doing here?
 3. Getting the path to the actual template.
 */
 
-module.exports = function(tempName, curDir, newTempName=null) {
+module.exports = function(tempName, curDir, newTempName) {
     // Get the template director path from tempPath.txt.
     var tempPath = getTempPath();
 
