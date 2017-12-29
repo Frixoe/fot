@@ -8,11 +8,12 @@
     "dist/",
     "package.json",
     "package-lock.json",
-    "tempPath.txt",
     "README.md"
   ],
   "scripts": {
-    "prepublish": "gulp setup",
+    "prepare": "gulp build",
+    "postpublish": "gulp build:removefolders",
+    "postinstall": "node dist/firstInstall.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -29,9 +30,11 @@
   },
   "deprecated": false,
   "dependencies": {
+    "shelljs": "^0.7.8"
+  },
+  "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-uglify": "^3.0.0",
-    "shelljs": "^0.7.8"
+    "gulp-uglify": "^3.0.0"
   }
 }

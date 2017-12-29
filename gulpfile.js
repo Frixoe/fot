@@ -2,9 +2,8 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var gutil = require('gulp-util');
 var del = require('del');
-var fs = require('fs');
 
-gulp.task('default', ['setup']);
+gulp.task('default', ['build']);
 
 /////////////////////////////
 //Build tasks : start
@@ -18,17 +17,17 @@ gulp.task('build:scripts', ['build:removefolders'], function(){
 });
 gulp.task('build:removefolders', function(){
     del([
-        'dist/**'
+        'dist/**',
     ]);
 });
 //////////////////////////////
 //Build tasks : end
 //////////////////////////////
 
-gulp.task('setup', ['build'], function(){
-    fs.writeFileSync('tempPath.txt', '', {encoding: 'utf8'}); 
-});
+// gulp.task('setup', ['build'], function(){
+//     fs.writeFileSync('tempPath.txt', '', {encoding: 'utf8'}); 
+// });
 
 gulp.task('watch', function(){
-    gulp.watch('src/**', ['scripts']);
+    gulp.watch('src/**', ['build']);
 });
