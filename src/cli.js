@@ -9,18 +9,14 @@ var getPath = require('./commands/getPath');
 var clearPath = require('./commands/clearPath');
 var listTemps = require('./commands/listTemps');
 
-// var helpString = ```USAGE: "fot {command} {argument}"
-// "Create folder templates with ease."
-
-// Commands:
-// - 'fot here': Set the templates directory to the working directory.
-// - 'fot get': Get the template directory's absolute path.
-// - 'fot set {abs-path}': Set the templates directory to the absolute path {abs-path}
-// - 'fot clone {template} {OPTIONAL new filename}': Clone a template into the working directory.
-// - 'fot clear': Forget your templates dir.
-// - 'fot list': Lists all the templates in your templates dir.
-
-// With great node packages come ridiculous bugs so please do report them :D```;
+var helpString = "Commands: \n" +
+"- 'fot here': Set the templates directory to the working directory.\n" +
+"- 'fot get': Get the template directory's absolute path.\n" +
+"- 'fot set {abs-path}': Set the templates directory to the absolute path {abs-path}\n" +
+"- 'fot clone {template} {OPTIONAL new filename}': Clone a template into the working directory.\n" +
+"- 'fot clear': Forget your templates dir.\n" +
+"- 'fot list': Lists all the templates in your templates dir.\n\n" +
+"With great node packages come ridiculous bugs so please do report them :D";
 
 var command = args[0];
 var input = args[1];
